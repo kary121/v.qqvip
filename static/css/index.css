@@ -1,0 +1,161 @@
+/*
+ * 作者:helang
+ * 邮箱:helang.love@qq.com
+ * jQuery插件库:http://www.jq22.com/mem395541
+ * CSDN博客:https://blog.csdn.net/u013350495
+ * 微信公众号:web-7258
+ */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.container {
+    width: 590px;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container > div {
+    float: left;
+}
+
+.container .logo {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 120px;
+}
+
+.container .input {
+    position: relative;
+    width: 500px;
+    height: 44px;
+    border-top: #ccc solid 1px;
+    border-right: none;
+    border-bottom: #ccc solid 1px;
+    border-left: #ccc solid 1px;
+    border-radius: 4px 0 0 4px;
+}
+
+.container .input > input {
+    outline: none;
+    border: none;
+    padding: 0 80px 0 10px;
+    margin: 0;
+    height: 44px;
+    width: 410px;
+    color: #333;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+}
+
+.container .input > input::-webkit-input-placeholder {
+    color: #999;
+}
+
+.container .input .picker {
+    width: 40px;
+    padding-right: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    line-height: 44px;
+    cursor: pointer;
+    color: #999;
+    font-size: 12px;
+    text-align: right;
+    background-image: url("../img/down.png");
+    background-position: 50px center;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+
+.container .input .picker-list {
+    list-style: none;
+    padding: 5px 0;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    margin: 0;
+    line-height: 26px;
+    font-size: 12px;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    display: none;
+}
+
+.container .input .picker-list > li {
+    padding-left: 36px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 16px auto;
+}
+
+.container .input .picker-list > li:hover {
+    background-color: #ebf1f5;
+    cursor: pointer;
+}
+
+.container .input .hot-list {
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    margin: 0;
+    line-height: 32px;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    display: none;
+}
+
+.container .input .hot-list > a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.container .input .hot-list > a:hover {
+    background-color: #f3f3f3;
+}
+
+.container .input .hot-list > a > div {
+    float: left;
+}
+
+.container .input .hot-list > a > div.number {
+    text-align: center;
+    width: 40px;
+}
+
+.container .search {
+    width: 89px;
+    height: 46px;
+    background-color: #08f;
+    background-image: url("../img/search.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}

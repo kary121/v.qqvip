@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>仿百度视频搜索</title>
+	<link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+<form action="{{ url_for('vqq') }}" method="post">
+	<div class="container">
+		<div class="logo" style="background-image: url(../static/img/baidu.png)"></div>
+		<div class="input">
+			<input type="text" placeholder="请输入要搜索的内容" autocomplete="off" id="search-input" name="sos">
+			<div class="picker">腾讯</div>
+		</div>
+		<input class="search" type="submit" value="   ">
+	</div>
+</form>
+</body>
+</html>
